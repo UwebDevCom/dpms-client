@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.profileContainer
+{
+    height: 200px;
+}
+.profileContainer img
+{
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -60px;
+}
+
+.user-details-container
+{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    span{
+        display: block;
+        &.userName
+        {
+            font-size: 20px;
+            color: var(--text--color-gray);
+            font-family: 'Heebo';
+            font-weight: 300;
+        }
+        &.userTitle{
+            @include titleBold;
+        }
+    }
+}
